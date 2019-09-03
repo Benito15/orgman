@@ -6,7 +6,8 @@ public class UserRoleFactory {
 
     //TODO: implement method body ONLY!
     public static UserRole buildUserRole(String orgCode, String userEmail, String roleId) {
-        throw new UnsupportedOperationException("Not supported yet.");
+        return new UserRole(orgCode, userEmail, roleId);
+
         /**
          * Your implementation goes here
          * INSTRUCTIONS

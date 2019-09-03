@@ -9,7 +9,8 @@ public class RaceFactory {
 
     //TODO: implement method body ONLY!
     public static Race buildRace(String raceDescription) {
-        throw new UnsupportedOperationException("Not supported yet.");
+        return new Race.Builder().raceId(Helper.generateRandomGivenSuffix(SUFFIX)).raceDescription(raceDescription).build();
+
         /**
          * Your implementation goes here
          * INSTRUCTIONS

@@ -1,5 +1,8 @@
 package ac.za.cput.adp3.xyzcongolmerate.util;
 
+import ac.za.cput.adp3.xyzcongolmerate.domain.demography.Gender;
+import ac.za.cput.adp3.xyzcongolmerate.factory.demography.GenderFactory;
+
 import java.util.UUID;
 
 public class Helper {
@@ -13,14 +16,36 @@ public class Helper {
     }
 
     public static String getSuffixFromClassName(Class<?> aClass) {
+
         String className = getClassName(aClass);
-        throw new UnsupportedOperationException("Not yet supported!");
-        /**
-         * Your implementation goes here
-         *
-         * INSTRUCTION
-         * 1. Remove line 17 [throw new UnsupportedOperationException("Not yet supported!");]
-         * 2. Get the capitalized letter(s) from the className and return it.
-         */
+
+        char[] letterOfClass = className.toCharArray();
+
+        String prefix ="";
+
+            for (int i = 0; i < letterOfClass.length;i++)
+            {
+
+               if(Character.isUpperCase(className.charAt(i)))
+                {
+                       prefix += className.charAt(i);
+                }
+
+            }
+
+        return prefix;
+
     }
+
+
+    public static void main(String[] args) {
+
+
+
+
+
+
+
+    }
+
 }
