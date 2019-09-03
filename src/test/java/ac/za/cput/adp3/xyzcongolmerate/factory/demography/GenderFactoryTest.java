@@ -5,14 +5,11 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class GenderFactoryTest {
-
-    //TODO: implement method body ONLY!
     @Test
     public void buildGender() {
 
         Gender gender = GenderFactory.buildGender("Male");
         System.out.println(gender);
-
         Assert.assertNotNull(gender.getGenderId());
     }
 }
